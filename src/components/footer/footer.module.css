@@ -1,0 +1,93 @@
+.container{
+    padding: 42px 24px 42px;
+    /* background-color: yellow; */
+}
+
+.heading{
+    font-family: 'Epilogue', sans-serif;
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.contactContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactInfo{
+    max-width: 1115px;
+    /* background-color: red; */
+}
+
+.description{
+    font-size: 17px;
+    margin-bottom: 24px;
+}
+
+.socailLinksContainer{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.adminBtn{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.contactForm{
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm input{
+    padding: 16px 24px;
+    margin-bottom: 5px;
+}
+
+.contactForm button{
+    display: block;
+    padding: 20px 50px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        text-align: center;
+    }
+
+    .contactContainer{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .contactInfo{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .adminBtn{
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    
+    .contactForm{
+        width: 100%;
+    }
+    
+    .contactForm input{
+        padding: 10px 15px;
+    }
+    
+    .contactForm button{
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}

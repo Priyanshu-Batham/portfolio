@@ -3,8 +3,9 @@ import { connectToDb } from "./connectToDb";
 
 export const createProject = async (
   title,
-  desc,
   slug,
+  desc,
+  techStack,
   status,
   projectLink,
   githubLink,
@@ -15,8 +16,9 @@ export const createProject = async (
     await connectToDb();
     const newProject = await Project.create({
       title,
-      desc,
       slug,
+      desc,
+      techStack,
       status,
       projectLink,
       githubLink,
@@ -28,12 +30,36 @@ export const createProject = async (
   }
 };
 
-export const getProjects = async () =>{
+export const getProjects = async () => {
   try {
     await connectToDb();
     const projects = await Project.find();
     return projects;
   } catch (error) {
-    return {status: "failure", error:error};
+    return { status: "failure", error: error };
   }
-}
+};
+
+export const getProject = async (slug) => {
+  try {
+    await connectToDb();
+    const project = await Project.findOne({ slug: slug });
+    return project;
+  } catch (error) {
+    return { status: "failure", error: error };
+  }
+};
+
+export const deleteProject = async (slug) => {
+  try {
+    await connectToDb();
+    const result = await Project.deleteOne({ slug: slug });
+    if (result.deletedCount === 1) {
+      return { status: "success", message: "Project deleted successfully" };
+    } else {
+      throw new Error("Project could not be deleted");
+    }
+  } catch (error) {
+    return { status: "failure", message: error.message };
+  }
+};

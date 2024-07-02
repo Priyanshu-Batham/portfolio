@@ -1,0 +1,12 @@
+.container{
+    max-width: 750px;
+    margin: auto;
+    min-height: 80vh;
+    /* background-color: orange; */
+    padding: 20px;
+}
+
+.heading{
+    font-family: 'Epilogue', sans-serif;
+    margin-bottom: 20px;
+}

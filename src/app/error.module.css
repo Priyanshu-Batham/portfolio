@@ -1,0 +1,12 @@
+.container{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgContainer{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}

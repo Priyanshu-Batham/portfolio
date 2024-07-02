@@ -1,4 +1,4 @@
-import { createProject, getProjects } from "@/lib/serverActions";
+import { createProject, deleteProject, getProjects } from "@/lib/serverActions";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
@@ -6,10 +6,9 @@ export async function POST(request) {
     // Parse the URL-encoded body
     const data = await request.json();
 
-    const {title, desc, slug, status, projectLink, githubLink, img} = data;
-    // console.log(title, desc, slug, status, projectLink, githubLink, img);
+    const {title, slug, desc, techStack, status, projectLink, githubLink, img} = data;
 
-    const newProject = await createProject(title, desc, slug, status, projectLink, githubLink, img);
+    const newProject = await createProject(title, slug, desc, techStack, status, projectLink, githubLink, img);
     if(!newProject._id) throw new Error('Project not added');
 
     const response = NextResponse.json({
@@ -37,6 +36,29 @@ export async function GET() {
   } catch (error) {
     return NextResponse.json(
       { message: error.message, status: "error" },
+    );
+  }
+}
+
+export async function DELETE(request) {
+  try {
+    // Parse the URL-encoded body
+    const data = await request.json();
+
+    const {slug} = data;
+    console.log(slug);
+
+    const res = await deleteProject(slug);
+    if(res.status === 'failure') throw new Error('Project not added');
+
+    const response = NextResponse.json({
+      message: "Project Deleted",
+      status: "success",
+    });
+    return response;
+  } catch (error) {
+    return NextResponse.json(
+      { message: error.message, status: "failure" },
     );
   }
 }

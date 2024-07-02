@@ -10,6 +10,9 @@ const ProjectSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    techStack: {
+      type: [String],
+    },
     slug: {
       type: String,
       required: true,
@@ -33,5 +36,4 @@ const ProjectSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export const Project =
-  mongoose.models?.Project || mongoose.model("Project", ProjectSchema);
+export const Project = mongoose.models?.Project || mongoose.model("Project", ProjectSchema);
