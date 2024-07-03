@@ -6,9 +6,9 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const Admin = () => {
-  //state to handle projects
-  const [projects, setProjects] = useState([]);
+  //state to handle projects and error
   const [error, setError] = useState();
+  const [projects, setProjects] = useState([]);
 
   //getting all the projects
   const getData = async () => {
