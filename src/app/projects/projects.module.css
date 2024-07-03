@@ -4,6 +4,7 @@
     min-height: 80vh;
     /* background-color: orange; */
     padding: 20px;
+    overflow: hidden;
 }
 
 .heading{
