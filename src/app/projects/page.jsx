@@ -2,7 +2,7 @@
 import { getProjects } from "@/lib/clientActions";
 import styles from "./projects.module.css";
 import Card from "@/components/cards/Card";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Work = async () => {
   const [projects, setProjects] = useState([]);
