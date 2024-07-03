@@ -5,9 +5,9 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className={styles.container} id="Contact">
-      <h1 className={styles.heading}>Let's work together</h1>
       <div className={styles.contactContainer}>
         <div className={styles.contactInfo}>
+          <h1 className={styles.heading}>Let's work together</h1>
           <p className={styles.description}>
             This is a template Figma file, turned into code using Anima. Learn
             more at AnimaApp.com This is a template Figma file, turned into code
@@ -35,15 +35,10 @@ const Footer = () => {
           <Link href="/admin" className={styles.adminBtn}>
             Admin?
           </Link>
-
         </div>
-        <form className={styles.contactForm}>
-          <input type="text" placeholder="Name" name="name" required />
-          <input type="email" placeholder="Email" name="email" required />
-          <div>
-            <button type="submit">Submit</button>
-          </div>
-        </form>
+        <div className={styles.imgContainer}>
+          <Image src="/footer.svg" alt="footer" fill />
+        </div>
       </div>
     </div>
   );

@@ -5,13 +5,11 @@
     align-items: center;
     justify-content: space-between;
     height: 78px;
-    padding: 0 42px;
+    padding: 0 150px;
     font-size: 20px;
+    font-family: "Poppins", sans-serif;
 }
 
-.logo{
-    font-family: 'Epilogue', sans-serif;
-}
 .logo a{
     text-decoration: none;
     color: black;
@@ -33,10 +31,19 @@
 .navlink a{
     text-decoration: none;
     color: black;
+    font-weight: 500;
+
+    &:hover{
+        color: rgba(107,59,255,255);
+    }
 }
 
 @media screen and (max-width: 768px){
     .container{
         padding: 0 12px;
+    }
+
+    .navContainer{
+        gap: 10px;
     }
 }

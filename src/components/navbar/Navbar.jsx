@@ -6,10 +6,14 @@ const Navbar = () => {
     <div className={styles.container}>
       <div>
         <h1 className={styles.logo}>
-          <Link href="/">Logo</Link>
+          <Link href="/">PB</Link>
         </h1>
       </div>
       <ul className={styles.navContainer}>
+        <li className={styles.navlink}>
+          <Link href="/">
+          Home</Link>
+        </li>
         <li className={styles.navlink}>
           <Link href="/projects">
           Projects</Link>

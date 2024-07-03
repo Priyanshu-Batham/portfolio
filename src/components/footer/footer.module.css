@@ -38,24 +38,12 @@
     text-decoration: none;
 }
 
-.contactForm{
-    width: 520px;
-    display: flex;
-    flex-direction: column;
+.imgContainer{
+    width: 200px;
+    height: 200px;
+    position: relative;
 }
 
-.contactForm input{
-    padding: 16px 24px;
-    margin-bottom: 5px;
-}
-
-.contactForm button{
-    display: block;
-    padding: 20px 50px;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-}
 
 @media screen and (max-width: 768px){
     .container{
@@ -75,19 +63,6 @@
 
     .adminBtn{
         padding: 10px 15px;
-        font-size: 15px;
-    }
-    
-    .contactForm{
-        width: 100%;
-    }
-    
-    .contactForm input{
-        padding: 10px 15px;
-    }
-    
-    .contactForm button{
-        padding: 10px 20px;
         font-size: 15px;
     }
 }
