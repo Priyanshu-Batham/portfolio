@@ -14,16 +14,16 @@ const Footer = () => {
             using Anima. Learn more at AnimaApp.com
           </p>
           <div className={styles.socailLinksContainer}>
-            <Link href="somewhere">
+            <Link href="https://discord.gg/6MbkazJTKv">
               <Image src="/discord.svg" alt="discord" width={36} height={36} />
             </Link>
-            <Link href="somewhere">
+            <Link href="mailto:priyanshubatham24733@gmail.com">
               <Image src="/gmail.svg" alt="gmail" width={36} height={36} />
             </Link>
-            <Link href="somewhere">
+            <Link href="https://github.com/Priyanshu-Batham">
               <Image src="/github.svg" alt="github" width={36} height={36} />
             </Link>
-            <Link href="somewhere">
+            <Link href="https://www.instagram.com/priyanshu_batham_1/">
               <Image
                 src="/instagram.svg"
                 alt="instagram"
