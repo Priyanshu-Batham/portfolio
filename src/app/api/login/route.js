@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import {cookies} from "next/headers";
+import { cookies } from "next/headers";
 
 export async function POST(request) {
   try {
@@ -13,19 +13,22 @@ export async function POST(request) {
     console.log("username: ", username);
 
     // Example: Basic authentication logic
-    if (username === "admin" && password === "123") {
+    if (
+      username === process.env.ADMIN_USERNAME &&
+      password === process.env.ADMIN_PASSWORD
+    ) {
       // Set a cookie
       cookies().set({
-        name: 'token',
-        value: 'adminToken',
+        name: "token",
+        value: "adminToken",
         httpOnly: true,
         // path: '/',
-      })
+      });
       const response = NextResponse.json({
         message: "Login successful",
         status: "success",
       });
-    //   response.headers.set("Set-Cookie", cookie);
+      //   response.headers.set("Set-Cookie", cookie);
       return response;
     } else {
       return NextResponse.json(
@@ -41,4 +44,3 @@ export async function POST(request) {
     );
   }
 }
-

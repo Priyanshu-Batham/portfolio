@@ -21,7 +21,7 @@ const SkillSection = () => {
           </div>
           <h1 className={styles.skillHeading}>Backend</h1>
           <p className={styles.skillDesc}>
-            Setting up a Backend server is one of the most challenging and interesting task in web development. I have worked on several server techs like Express, MongoDb, Next Stack and much more.
+            Setting up a Backend server is one of the most challenging and interesting task in web development. I have worked on several server techs like Express, MongoDb, Next Stack etc. My Expertise covers the DevOps section as well including Github AWS and much more.
           </p>
         </div>
         <div className={styles.skillContainer}>
@@ -30,9 +30,7 @@ const SkillSection = () => {
           </div>
           <h1 className={styles.skillHeading}>Intergration</h1>
           <p className={styles.skillDesc}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
-            ipsum obcaecati quos! Corrupti iste alias suscipit omnis mollitia!
-            Cumque ad temporibus illum iste.
+            Creating Frontend & Backend is one thing and integrating the entire system is another. Been working with API's, Json, Web Tokens and more, I have gained a lot of experience in this field. 
           </p>
         </div>
       </div>

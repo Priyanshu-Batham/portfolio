@@ -16,7 +16,7 @@ export default function Home() {
           <h1 className={styles.name}>Priyanshu Batham</h1>
           <MyWriter />
           <div className={styles.btnContainer}>
-            <button className={styles.btnResume}>Resume</button>
+            {/* <button className={styles.btnResume}>Resume</button> */}
             <Link href="/projects" className={styles.btnGithub}>
               Projects
             </Link>
