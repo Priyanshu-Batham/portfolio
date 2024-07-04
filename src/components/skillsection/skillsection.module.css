@@ -1,5 +1,5 @@
 .outerContainer {
-  background-color: rgba(107, 59, 255, 255);
+  background-color: var(--primary);
   color: white;
   padding: 50px 20px;
 }

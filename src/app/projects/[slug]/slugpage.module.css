@@ -1,71 +1,76 @@
-.container{
-    max-width: 1200px;
-    min-height: 80vh;
-    /* background-color: lightgray; */
-    margin: auto;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+.container {
+  max-width: 1200px;
+  min-height: 80vh;
+  /* background-color: lightgray; */
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
-.leftContainer{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.leftContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.headingContainer{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.headingContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.headingContainer h1{
-    font-family: "Epilogue", sans-serif;
+.headingContainer h1 {
+  font-family: "Epilogue", sans-serif;
 }
 
-.headingContainer h3{
-    padding: 5px 10px;
-    background-color: lightcyan;
-    border-radius: 5px;
-    font-size: 20px;
+.headingContainer h3 {
+  padding: 5px 10px;
+  background-color: lightcyan;
+  border-radius: 5px;
+  font-size: 20px;
 }
 
-.techContainer{
-    display: flex;
-    flex-wrap: wrap;
+.techContainer {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.linkContainer{
-    display: flex;
-    gap: 20px;
-    align-items: center;
+.linkContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
-.linkContainer a{
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
+.linkContainer a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  transition-duration: 0.5s;
 
+  &:hover {
+    background-color: var(--primary);
+  }
 }
 
-.rightContainer{
-    height: 400px;
-    width: 400px;
-    position: relative;
-    object-fit: contain;
+.rightContainer {
+  height: 400px;
+  width: 600px;
+  position: relative;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 768px) {
-    .container{
-        flex-direction: column-reverse;
-    }
+  .container {
+    flex-direction: column-reverse;
+    overflow: hidden;
+  }
 
-    .leftContainer{
-        width: 100%;
-    }
+  .leftContainer {
+    width: 100%;
+  }
 }

@@ -50,6 +50,11 @@
   font-size: 15px;
   border: none;
   outline: none;
+  transition-duration: 0.5s;
+
+  &:hover {
+    background-color: var(--primary);
+  }
 }
 
 .delBtn {

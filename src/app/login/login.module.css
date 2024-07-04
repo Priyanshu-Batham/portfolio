@@ -1,94 +1,99 @@
-.heading{
-    display: none;
-    font-family: "Epilogue", sans-serif;
-    margin-top: 50px;
-    text-align: center;
+.heading {
+  display: none;
+  font-family: "Epilogue", sans-serif;
+  margin-top: 50px;
+  text-align: center;
 }
 
-.container{
-    max-width: 1200px;
-    padding: 10px;
-    margin: auto;
-    min-height: 70vh;
-    display: flex;
-    align-items: center;
-    gap: 100px;
+.container {
+  max-width: 1200px;
+  padding: 10px;
+  margin: auto;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  gap: 100px;
 }
 
-.imgContainer{
-    height: 500px;
-    width: 500px;
-    position: relative;
-    /* background-color: green; */
+.imgContainer {
+  height: 500px;
+  width: 500px;
+  position: relative;
+  /* background-color: green; */
 }
 
-.formContainer{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-color: red; */
-    padding: 50px;
+.formContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: red; */
+  padding: 50px;
 }
 
-.subHeading{
-    font-family: "Epilogue", sans-serif;
-    margin-bottom: 50px;
-    /* text-align: center; */
-    /* display: none; */
+.subHeading {
+  font-family: "Epilogue", sans-serif;
+  margin-bottom: 50px;
+  /* text-align: center; */
+  /* display: none; */
 }
 
-.formContainer input{
-    width: 100%;
-    height: 40px;
-    border: none;
-    background-color: #f3f3f3;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 15px;
-    outline: none;
+.formContainer input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: #f3f3f3;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  outline: none;
 }
 
-.formContainer button{
-    width: 100%;
-    height: 40px;
-    border: none;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 15px;
-    outline: none;
-    cursor: pointer;
+.formContainer button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+  transition-duration: 0.5s;
+
+  &:hover {
+    background-color: var(--primary);
+  }
 }
 
-.formContainer h3{
-    font-family: "Epilogue", sans-serif;
-    height: 25px;
-    color: red;
+.formContainer h3 {
+  font-family: "Epilogue", sans-serif;
+  height: 25px;
+  color: red;
 }
 
 @media screen and (max-width: 768px) {
-    .heading{
-        display: block;
-    }
+  .heading {
+    display: block;
+  }
 
-    .container{
-        flex-direction: column;
-        gap: 0;
-    }
+  .container {
+    flex-direction: column;
+    gap: 0;
+  }
 
-    .imgContainer{
-        height: 300px;
-        width: 300px;
-        /* background-color: red; */
-    }
+  .imgContainer {
+    height: 300px;
+    width: 300px;
+    /* background-color: red; */
+  }
 
-    .subHeading{
-        display: none;
-    }
+  .subHeading {
+    display: none;
+  }
 
-    .formContainer{
-        width: 100%;
-    }
+  .formContainer {
+    width: 100%;
+  }
 }

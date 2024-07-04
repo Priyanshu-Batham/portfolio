@@ -1,58 +1,69 @@
-.outerContainer{
-    margin-top: 20px;
+.outerContainer {
+  margin-top: 20px;
 }
 
-.container{
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
+.container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 /* Useless as I am using height width in Image tag */
-.imgContainer{
-    width: 300px;
-    height: 200px;
-    position: relative;
+.imgContainer {
+  width: 450px;
+  height: 288px;
+  position: relative;
 }
 
-.projectInfoContainer{
-    display: flex;
+.projectInfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.heading {
+  font-family: "Epilogue", sans-serif;
+}
+
+.status {
+  padding: 5px 5px;
+  margin-left: 5px;
+  background-color: rgb(233, 233, 233);
+  /* color: white; */
+  border-radius: 10px;
+  font-size: 15px;
+  /* font-weight: 200; */
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  font-size: 18px;
+  transition-duration: 0.5s;
+
+  &:hover {
+    background-color: var(--primary);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
     flex-direction: column;
-    align-items: start;
-    gap: 20px;
-}
-
-.heading{
-    font-family: "Epilogue", sans-serif;
-}
-
-.status{
-    padding: 5px 5px;
-    margin-left: 5px;
-    background-color: rgb(233, 233, 233);
-    /* color: white; */
-    border-radius: 10px;
-    font-size: 15px;
-    /* font-weight: 200; */
+    align-items: center;
     text-align: center;
-}
+  }
 
-.link{
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    padding: 5px 10px;
-    font-size: 18px;
-}
+  .imgContainer {
+    width: 350px;
+    height: 200px;
+  }
 
-@media screen and (max-width: 768px){
-    .container{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .projectInfoContainer{
-        align-items: center;
-        gap: 12px;
-    }
+  .projectInfoContainer {
+    align-items: center;
+    gap: 12px;
+  }
 }

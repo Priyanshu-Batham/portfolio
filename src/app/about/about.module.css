@@ -1,0 +1,56 @@
+.container {
+  max-width: 1500px;
+  margin: auto;
+  min-height: 80vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-family: "Epilogue", sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.meSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.imgContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.musicSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    gap: 100px;
+    margin-bottom: 50px;
+  }
+
+  .meSection {
+    flex-direction: column;
+  }
+  .musicSection {
+    flex-direction: column-reverse;
+  }
+
+  .meSection,
+  .musicSection {
+    gap: 10px;
+    text-align: center;
+  }
+}

@@ -1,69 +1,73 @@
-.container{
-    padding: 42px 24px 42px;
-    /* background-color: yellow; */
+.container {
+  padding: 42px 24px 42px;
+  /* background-color: yellow; */
 }
 
-.heading{
-    font-family: 'Epilogue', sans-serif;
-    font-size: 32px;
-    margin-bottom: 24px;
+.heading {
+  font-family: "Epilogue", sans-serif;
+  font-size: 32px;
+  margin-bottom: 24px;
 }
 
-.contactContainer{
+.contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactInfo {
+  max-width: 1115px;
+  /* background-color: red; */
+}
+
+.description {
+  font-size: 17px;
+  margin-bottom: 24px;
+}
+
+.socailLinksContainer {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.adminBtn {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  transition-duration: 0.5s;
+
+  &:hover {
+    background-color: var(--primary);
+  }
+}
+
+.imgContainer {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .contactContainer {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .contactInfo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
+    flex-direction: column;
+  }
 
-.contactInfo{
-    max-width: 1115px;
-    /* background-color: red; */
-}
-
-.description{
-    font-size: 17px;
-    margin-bottom: 24px;
-}
-
-.socailLinksContainer{
-    display: flex;
-    gap: 24px;
-    margin-bottom: 24px;
-}
-
-.adminBtn{
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-}
-
-.imgContainer{
-    width: 200px;
-    height: 200px;
-    position: relative;
-}
-
-
-@media screen and (max-width: 768px){
-    .container{
-        text-align: center;
-        overflow: hidden;
-    }
-
-    .contactContainer{
-        flex-direction: column;
-        gap: 50px;
-    }
-
-    .contactInfo{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .adminBtn{
-        padding: 10px 15px;
-        font-size: 15px;
-    }
+  .adminBtn {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
 }

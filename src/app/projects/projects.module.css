@@ -1,5 +1,5 @@
 .container{
-    max-width: 750px;
+    max-width: 1500px;
     margin: auto;
     min-height: 80vh;
     /* background-color: orange; */
@@ -9,5 +9,11 @@
 
 .heading{
     font-family: 'Epilogue', sans-serif;
-    margin-bottom: 20px;
+    margin: 20px 0;
+}
+
+.loading{
+    font-family: 'Epilogue', sans-serif;
+    text-align: center;
+    margin: 30vh 0;
 }

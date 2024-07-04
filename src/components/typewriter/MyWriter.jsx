@@ -7,7 +7,7 @@ const MyWriter = () => {
     <h1 className={styles.typewriter}>
       <Typewriter
          options={{
-            strings: ['Web Developer', 'Problem Solver', 'Competitive Programmer'],
+            strings: ['Developer', 'Problem Solver', 'Competitive Programmer'],
             autoStart: true,
             loop: true,
           }}

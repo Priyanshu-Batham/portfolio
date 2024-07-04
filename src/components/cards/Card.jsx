@@ -6,12 +6,12 @@ const Card = ({ project }) => {
   return (
     <div className={styles.outerContainer}>
       <div className={styles.container}>
-        <div className={styles.imgContainer}>
+        <div>
           <Image
             src={project.img ? project.img : `/defaultProject.jpg`}
             alt={project.title}
-            height={200}
-            width={300}
+            width={380}
+            height={250}
           />
         </div>
         <div className={styles.projectInfoContainer}>
@@ -22,7 +22,7 @@ const Card = ({ project }) => {
               {project.status === "ongoing" ? "On Going" : "Completed"}
             </span>
           </div>
-          <p className={styles.desc}>{project.desc.slice(0, 100)}...</p>
+          <p className={styles.desc}>{project.desc.slice(0, 200)}...</p>
           <Link href={`/projects/${project.slug}`} className={styles.link}>
             Goto Project
           </Link>

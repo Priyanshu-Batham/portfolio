@@ -1,11 +1,12 @@
 .container {
   max-width: 1500px;
   margin: auto;
-  min-height: 80vh;
+  min-height: calc(100vh - 78px);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   gap: 50px;
+  padding: 5px;
 }
 
 .leftContainer {
@@ -22,7 +23,7 @@
 
 .leftContainer h2 span {
   font-weight: 800;
-  color: rgba(107, 59, 255, 255);
+  color: var(--primary);
 }
 
 .name {
@@ -50,7 +51,7 @@
   transition-duration: 0.5s;
 
   &:hover {
-    background-color: rgba(107, 59, 255, 255);
+    background-color: var(--primary);
   }
 }
 
@@ -63,7 +64,7 @@
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column-reverse;
-    justify-content: center;
+    justify-content: start;
     gap: 0;
   }
 
