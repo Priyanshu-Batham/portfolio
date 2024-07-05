@@ -3,6 +3,7 @@ import styles from "./home.module.css";
 import Image from "next/image";
 import SkillSection from "@/components/skillsection/SkillSection";
 import Link from "next/link";
+import CpSection from "@/components/cpsection/CpSection";
 
 export default function Home() {
   return (
@@ -28,6 +29,9 @@ export default function Home() {
       </div>
       {/* Skill Section */}
       <SkillSection />
+
+      {/* CP Section */}
+      <CpSection />
     </>
   );
 }

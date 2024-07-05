@@ -1,7 +1,7 @@
 .outerContainer {
   background-color: var(--primary);
   color: white;
-  padding: 50px 20px;
+  padding: 150px 20px;
 }
 
 .heading {
@@ -14,7 +14,9 @@
 .container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
   gap: 80px;
 }
 
@@ -34,11 +36,12 @@
 
 @media screen and (max-width: 768px) {
   .outerContainer {
-    padding: 50px 20px;
+    padding: 100px 20px;
   }
 
   .heading {
     margin-bottom: 0;
+    font-size: 40px;
   }
 
   .container {

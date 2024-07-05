@@ -6,13 +6,13 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   padding: 10px;
   margin: auto;
   min-height: 70vh;
   display: flex;
   align-items: center;
-  gap: 100px;
+  justify-content: space-between;
 }
 
 .imgContainer {
@@ -80,13 +80,14 @@
 
   .container {
     flex-direction: column;
+    justify-content: start;
+    min-height: 0;
     gap: 0;
   }
 
   .imgContainer {
     height: 300px;
     width: 300px;
-    /* background-color: red; */
   }
 
   .subHeading {
@@ -95,5 +96,6 @@
 
   .formContainer {
     width: 100%;
+    padding: 0 50px;
   }
 }

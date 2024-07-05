@@ -1,16 +1,22 @@
+.outerContainer {
+  padding: 150px 20px;
+}
+
 .container {
   max-width: 1300px;
   margin: auto;
-  min-height: 80vh;
+  /* min-height: 80vh; */
   padding: 20px;
   display: flex;
   flex-direction: column;
+  gap: 50px;
 }
 
 .heading {
-  font-family: "Epilogue", sans-serif;
   text-align: center;
-  margin: 20px;
+  margin-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
 }
 
 .meSection {
@@ -36,9 +42,17 @@
 }
 
 @media screen and (max-width: 768px) {
+  .outerContainer {
+    padding: 100px 20px;
+  }
+
   .container {
     gap: 100px;
     margin-bottom: 50px;
+  }
+
+  .heading {
+    font-size: 40px;
   }
 
   .meSection {
